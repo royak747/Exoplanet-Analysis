@@ -8250,11 +8250,11 @@ memory usage: 1.5+ MB
 <p>After selecting only the features that are relevant for Earth similarity, I run msno.matrix(df) again. The new plot shows the missingness pattern only for this smaller subset of variables. For the purposes of this project, I will simply drop rows with missing values so that the later PCA and clustering steps are easier to interpret.</p>
 <p>In a more production-level setting, however, it is important to think carefully about imputation and about why data are missing. Data can be:</p>
 <ul>
-<li><p>MCAR (Missing Completely At Random) – the missingness is unrelated to any observed or unobserved values,</p>
+<li><p>MCAR (Missing Completely At Random) – the missingness is unrelated to any observed or unobserved values</p>
 </li>
-<li><p>MAR (Missing At Random) – the missingness depends on other observed variables, and</p>
+<li><p>MAR (Missing At Random) – the missingness depends on other observed variables</p>
 </li>
-<li><p>MNAR (Missing Not At Random) – the missingness is related to the unobserved value itself.</p>
+<li><p>MNAR (Missing Not At Random) – the missingness is related to the unobserved value itself</p>
 </li>
 </ul>
 <p>Different types of "missingness" call for different imputation strategies, so dropping rows is a simplifying assumption for this exploratory experiment, not necessarily the best choice in general.</p>
